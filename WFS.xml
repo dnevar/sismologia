@@ -1,0 +1,212 @@
+<WFS_Capabilities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogc="http://www.opengis.net/ogc" version="1.0.0" xmlns="http://www.opengis.net/wfs" updateSequence="0" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.0.0/WFS-capabilities.xsd" xmlns:gml="http://www.opengis.net/gml" xmlns:ows="http://www.opengis.net/ows">
+ <Service>
+  <Name>WFS</Name>
+  <Title>Clasificación de riesgo sismologico y ubicación de fallas del Departamento de Norte de Santander</Title>
+  <Abstract>Clasificación de riesgo sismologico y ubicación de fallas del Departamento de Norte de Santander.
+ Metodologías utilizadas para la evaluación del Riesgo Sísmico Específico a nivel Urbano. La mayoría de los estudios de riesgo sísmico a nivel urbano utilizan como parámetro del terremoto, la intensidad macrosísmica, la  aceleración máxima o la aceleración máxima de manera   indirecta,   obtenida   a   partir   de   parámetros   focales,   como   magnitud,   distancia epicentral, etc., y para evaluar el riesgo sísmico, se utilizan las matrices de probabilidad o las funciones de vulnerabilidad, obtenidas a partir de las experiencias con terremotos pasados, ó en  el  caso  de  que  la  actividad  sísmica  sea  baja,  mediante  técnicas  de  simulación  (Yépez, 1996). </Abstract>
+  <OnlineResource/>
+  <Fees>no conditions apply</Fees>
+  <AccessConstraints>None</AccessConstraints>
+ </Service>
+ <Capability>
+  <Request>
+   <GetCapabilities>
+    <DCPType>
+     <HTTP>
+      <Get onlineResource="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+     </HTTP>
+    </DCPType>
+    <DCPType>
+     <HTTP>
+      <Post onlineResource="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+     </HTTP>
+    </DCPType>
+   </GetCapabilities>
+   <DescribeFeatureType>
+    <SchemaDescriptionLanguage>
+     <XMLSCHEMA/>
+    </SchemaDescriptionLanguage>
+    <DCPType>
+     <HTTP>
+      <Get onlineResource="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+     </HTTP>
+    </DCPType>
+    <DCPType>
+     <HTTP>
+      <Post onlineResource="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+     </HTTP>
+    </DCPType>
+   </DescribeFeatureType>
+   <GetFeature>
+    <ResultFormat>
+     <GML2/>
+     <GML3/>
+     <GeoJSON/>
+    </ResultFormat>
+    <DCPType>
+     <HTTP>
+      <Get onlineResource="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+     </HTTP>
+    </DCPType>
+    <DCPType>
+     <HTTP>
+      <Post onlineResource="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+     </HTTP>
+    </DCPType>
+   </GetFeature>
+   <Transaction>
+    <DCPType>
+     <HTTP>
+      <Post onlineResource="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+     </HTTP>
+    </DCPType>
+   </Transaction>
+  </Request>
+ </Capability>
+ <FeatureTypeList>
+  <Operations>
+   <Query/>
+  </Operations>
+  <FeatureType>
+   <Name>Amenaza_Sismica_-_Norte_De_Santander</Name>
+   <Title>Amenaza Sismica - Norte De Santander</Title>
+   <Abstract/>
+   <SRS>EPSG:3857</SRS>
+   <Operations>
+    <Query/>
+   </Operations>
+   <LatLongBoundingBox maxx="-8.02024e+06" minx="-8.19728e+06" maxy="1.03885e+06" miny="766947"/>
+  </FeatureType>
+  <FeatureType>
+   <Name>CentrosPoblados</Name>
+   <Title>CentrosPoblados</Title>
+   <Abstract/>
+   <SRS>EPSG:3857</SRS>
+   <Operations>
+    <Query/>
+   </Operations>
+   <LatLongBoundingBox maxx="-8.04042e+06" minx="-8.17871e+06" maxy="1.00617e+06" miny="783258"/>
+  </FeatureType>
+  <FeatureType>
+   <Name>Colombia</Name>
+   <Title>Colombia</Title>
+   <Abstract/>
+   <SRS>EPSG:3857</SRS>
+   <Operations>
+    <Query/>
+   </Operations>
+   <LatLongBoundingBox maxx="-7.44455e+06" minx="-9.09705e+06" maxy="1.41296e+06" miny="-469950"/>
+  </FeatureType>
+  <FeatureType>
+   <Name>Curvas100</Name>
+   <Title>Curvas100</Title>
+   <Abstract/>
+   <SRS>EPSG:3857</SRS>
+   <Operations>
+    <Query/>
+   </Operations>
+   <LatLongBoundingBox maxx="-8.02086e+06" minx="-8.19054e+06" maxy="1.03793e+06" miny="766898"/>
+  </FeatureType>
+  <FeatureType>
+   <Name>Departamentos</Name>
+   <Title>Departamentos</Title>
+   <Abstract/>
+   <SRS>EPSG:3857</SRS>
+   <Operations>
+    <Query/>
+   </Operations>
+   <LatLongBoundingBox maxx="-7.44455e+06" minx="-9.0976e+06" maxy="1.5044e+06" miny="-469950"/>
+  </FeatureType>
+  <FeatureType>
+   <Name>DrenajeDoble</Name>
+   <Title>DrenajeDoble</Title>
+   <Abstract/>
+   <SRS>EPSG:3857</SRS>
+   <Operations>
+    <Query/>
+   </Operations>
+   <LatLongBoundingBox maxx="-8.01626e+06" minx="-8.03044e+06" maxy="786801" miny="782241"/>
+  </FeatureType>
+  <FeatureType>
+   <Name>DrenajeSencillo</Name>
+   <Title>DrenajeSencillo</Title>
+   <Abstract/>
+   <SRS>EPSG:3857</SRS>
+   <Operations>
+    <Query/>
+   </Operations>
+   <LatLongBoundingBox maxx="-8.01904e+06" minx="-8.19685e+06" maxy="1.03885e+06" miny="766860"/>
+  </FeatureType>
+  <FeatureType>
+   <Name>FallasNorteDeSantander</Name>
+   <Title>FallasNorteDeSantander</Title>
+   <Abstract/>
+   <SRS>EPSG:3857</SRS>
+   <Operations>
+    <Query/>
+   </Operations>
+   <LatLongBoundingBox maxx="-8.02952e+06" minx="-8.18664e+06" maxy="1.02815e+06" miny="767040"/>
+  </FeatureType>
+  <FeatureType>
+   <Name>Municipios</Name>
+   <Title>Municipios</Title>
+   <Abstract/>
+   <SRS>EPSG:3857</SRS>
+   <Operations>
+    <Query/>
+   </Operations>
+   <LatLongBoundingBox maxx="-8.01626e+06" minx="-8.19691e+06" maxy="1.03886e+06" miny="766859"/>
+  </FeatureType>
+  <FeatureType>
+   <Name>Norte_De_Santander</Name>
+   <Title>Norte De Santander</Title>
+   <Abstract/>
+   <SRS>EPSG:3857</SRS>
+   <Operations>
+    <Query/>
+   </Operations>
+   <LatLongBoundingBox maxx="-8.01626e+06" minx="-8.19691e+06" maxy="1.03886e+06" miny="766859"/>
+  </FeatureType>
+  <FeatureType>
+   <Name>Veredas</Name>
+   <Title>Veredas</Title>
+   <Abstract/>
+   <SRS>EPSG:3857</SRS>
+   <Operations>
+    <Query/>
+   </Operations>
+   <LatLongBoundingBox maxx="-8.01828e+06" minx="-8.19691e+06" maxy="1.03886e+06" miny="766859"/>
+  </FeatureType>
+  <FeatureType>
+   <Name>Vías</Name>
+   <Title>Vías</Title>
+   <Abstract/>
+   <SRS>EPSG:3857</SRS>
+   <Operations>
+    <Query/>
+   </Operations>
+   <LatLongBoundingBox maxx="-8.03683e+06" minx="-8.19361e+06" maxy="1.0308e+06" miny="782089"/>
+  </FeatureType>
+ </FeatureTypeList>
+ <ogc:Filter_Capabilities>
+  <ogc:Spatial_Capabilities>
+   <ogc:Spatial_Operators>
+    <ogc:BBOX/>
+    <ogc:Disjoint/>
+    <ogc:Intersect/>
+    <ogc:Touches/>
+    <ogc:Crosses/>
+    <ogc:Contains/>
+    <ogc:Overlaps/>
+    <ogc:Within/>
+   </ogc:Spatial_Operators>
+  </ogc:Spatial_Capabilities>
+  <ogc:Scalar_Capabilities>
+   <ogc:Comparison_Operators>
+    <ogc:Simple_Comparisons/>
+    <ogc:Between/>
+    <ogc:Like/>
+   </ogc:Comparison_Operators>
+  </ogc:Scalar_Capabilities>
+ </ogc:Filter_Capabilities>
+</WFS_Capabilities>
