@@ -1,0 +1,64 @@
+<WCS_Capabilities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xmlns="http://www.opengis.net/wcs" updateSequence="0" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/wcs http://schemas.opengis.net/wcs/1.0.0/wcsCapabilities.xsd" xmlns:gml="http://www.opengis.net/gml">
+ <Service>
+  <Name>WCS</Name>
+  <Title>Clasificación de riesgo sismologico y ubicación de fallas del Departamento de Norte de Santander</Title>
+  <Abstract>Clasificación de riesgo sismologico y ubicación de fallas del Departamento de Norte de Santander.
+ Metodologías utilizadas para la evaluación del Riesgo Sísmico Específico a nivel Urbano. La mayoría de los estudios de riesgo sísmico a nivel urbano utilizan como parámetro del terremoto, la intensidad macrosísmica, la  aceleración máxima o la aceleración máxima de manera   indirecta,   obtenida   a   partir   de   parámetros   focales,   como   magnitud,   distancia epicentral, etc., y para evaluar el riesgo sísmico, se utilizan las matrices de probabilidad o las funciones de vulnerabilidad, obtenidas a partir de las experiencias con terremotos pasados, ó en  el  caso  de  que  la  actividad  sísmica  sea  baja,  mediante  técnicas  de  simulación  (Yépez, 1996). </Abstract>
+  <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""/>
+  <Fees>no conditions apply</Fees>
+  <AccessConstraints>None</AccessConstraints>
+ </Service>
+ <Capability>
+  <Request>
+   <GetCapabilities>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+    <DCPType>
+     <HTTP>
+      <Post>
+       <OnlineResource xlink:type="simple" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+      </Post>
+     </HTTP>
+    </DCPType>
+   </GetCapabilities>
+   <DescribeCoverage>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+    <DCPType>
+     <HTTP>
+      <Post>
+       <OnlineResource xlink:type="simple" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+      </Post>
+     </HTTP>
+    </DCPType>
+   </DescribeCoverage>
+   <GetCoverage>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+    <DCPType>
+     <HTTP>
+      <Post>
+       <OnlineResource xlink:type="simple" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+      </Post>
+     </HTTP>
+    </DCPType>
+   </GetCoverage>
+  </Request>
+ </Capability>
+ <ContentMetadata/>
+</WCS_Capabilities>
