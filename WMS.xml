@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WMS_Capabilities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" xmlns="http://www.opengis.net/wms" xsi:schemaLocation="http://www.opengis.net/wms http://schemas.opengis.net/wms/1.3.0/capabilities_1_3_0.xsd http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/sld_capabilities.xsd http://www.qgis.org/wms http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;REQUEST=GetSchemaExtension" xmlns:sld="http://www.opengis.net/sld" xmlns:qgs="http://www.qgis.org/wms">
+ <Service>
+  <Name>WMS</Name>
+  <Title>Clasificación de riesgo sismologico y ubicación de fallas del Departamento de Norte de Santander</Title>
+  <Abstract>Clasificación de riesgo sismologico y ubicación de fallas del Departamento de Norte de Santander.
+ Metodologías utilizadas para la evaluación del Riesgo Sísmico Específico a nivel Urbano. La mayoría de los estudios de riesgo sísmico a nivel urbano utilizan como parámetro del terremoto, la intensidad macrosísmica, la  aceleración máxima o la aceleración máxima de manera   indirecta,   obtenida   a   partir   de   parámetros   focales,   como   magnitud,   distancia epicentral, etc., y para evaluar el riesgo sísmico, se utilizan las matrices de probabilidad o las funciones de vulnerabilidad, obtenidas a partir de las experiencias con terremotos pasados, ó en  el  caso  de  que  la  actividad  sísmica  sea  baja,  mediante  técnicas  de  simulación  (Yépez, 1996). </Abstract>
+  <KeywordList>
+   <Keyword vocabulary="ISO">infoMapAccessService</Keyword>
+  </KeywordList>
+  <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""/>
+  <ContactInformation>
+   <ContactPersonPrimary>
+    <ContactPerson/>
+    <ContactOrganization>Ingeonimas.  Instituto Nacional de geología y mineria</ContactOrganization>
+    <ContactPosition/>
+   </ContactPersonPrimary>
+   <ContactVoiceTelephone/>
+   <ContactElectronicMailAddress/>
+  </ContactInformation>
+  <Fees>no conditions apply</Fees>
+  <AccessConstraints>None</AccessConstraints>
+ </Service>
+ <Capability>
+  <Request>
+   <GetCapabilities>
+    <Format>text/xml</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+   </GetCapabilities>
+   <GetMap>
+    <Format>image/jpeg</Format>
+    <Format>image/png</Format>
+    <Format>image/png; mode=16bit</Format>
+    <Format>image/png; mode=8bit</Format>
+    <Format>image/png; mode=1bit</Format>
+    <Format>application/dxf</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+   </GetMap>
+   <GetFeatureInfo>
+    <Format>text/plain</Format>
+    <Format>text/html</Format>
+    <Format>text/xml</Format>
+    <Format>application/vnd.ogc.gml</Format>
+    <Format>application/vnd.ogc.gml/3.1.1</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+   </GetFeatureInfo>
+   <sld:GetLegendGraphic>
+    <Format>image/jpeg</Format>
+    <Format>image/png</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+   </sld:GetLegendGraphic>
+   <sld:DescribeLayer>
+    <Format>text/xml</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+   </sld:DescribeLayer>
+   <qgs:GetStyles>
+    <Format>text/xml</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+   </qgs:GetStyles>
+  </Request>
+  <Exception>
+   <Format>XML</Format>
+  </Exception>
+  <sld:UserDefinedSymbolization RemoteWFS="0" RemoteWCS="0" InlineFeature="0" UserStyle="1" SupportSLD="1" UserLayer="0"/>
+  <Layer queryable="1">
+   <Name>Taller2NS</Name>
+   <Title>Taller2NS</Title>
+   <CRS>CRS:84</CRS>
+   <CRS>EPSG:3857</CRS>
+   <CRS>EPSG:4326</CRS>
+   <CRS>EPSG:3116</CRS>
+   <EX_GeographicBoundingBox>
+    <westBoundLongitude>-74.4249</westBoundLongitude>
+    <eastBoundLongitude>-70.4258</eastBoundLongitude>
+    <southBoundLatitude>6.80567</southBoundLatitude>
+    <northBoundLatitude>9.34468</northBoundLatitude>
+   </EX_GeographicBoundingBox>
+   <BoundingBox CRS="EPSG:3116" maxx="1.52722e+06" minx="1.24434e+06" maxy="1.40393e+06" miny="961603"/>
+   <BoundingBox CRS="EPSG:4326" maxx="9.34468" minx="6.80567" maxy="-70.4258" miny="-74.4249"/>
+   <BoundingBox CRS="EPSG:3857" maxx="-7.83976e+06" minx="-8.28494e+06" maxy="1.04489e+06" miny="759392"/>
+   <Layer queryable="1">
+    <Name>estacioensp</Name>
+    <Title>estacioensp</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3116</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-72.8116</westBoundLongitude>
+     <eastBoundLongitude>-72.6802</eastBoundLongitude>
+     <southBoundLatitude>7.7618</southBoundLatitude>
+     <northBoundLatitude>8.11363</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:3116" maxx="1.38925e+06" minx="1.35028e+06" maxy="1.15415e+06" miny="1.13953e+06"/>
+    <BoundingBox CRS="EPSG:4326" maxx="8.11363" minx="7.7618" maxy="-72.6802" miny="-72.8116"/>
+    <BoundingBox CRS="EPSG:3857" maxx="-8.09072e+06" minx="-8.10535e+06" maxy="906239" miny="866694"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=estacioensp&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+   </Layer>
+   <Layer queryable="1">
+    <Name>FallasNorteDeSantander</Name>
+    <Title>FallasNorteDeSantander</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3116</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-73.5418</westBoundLongitude>
+     <eastBoundLongitude>-72.1304</eastBoundLongitude>
+     <southBoundLatitude>6.87388</southBoundLatitude>
+     <northBoundLatitude>9.19625</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:3116" maxx="1.5093e+06" minx="1.25191e+06" maxy="1.21524e+06" miny="1.05887e+06"/>
+    <BoundingBox CRS="EPSG:4326" maxx="9.19625" minx="6.87388" maxy="-72.1304" miny="-73.5418"/>
+    <BoundingBox CRS="EPSG:3857" maxx="-8.02952e+06" minx="-8.18664e+06" maxy="1.02815e+06" miny="767040"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=FallasNorteDeSantander&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <MaxScaleDenominator>3.5e+06</MaxScaleDenominator>
+   </Layer>
+   <Layer queryable="1">
+    <Name>Amenaza Sismica - Norte De Santander</Name>
+    <Title>Amenaza Sismica - Norte De Santander</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3116</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-73.6374</westBoundLongitude>
+     <eastBoundLongitude>-72.0471</eastBoundLongitude>
+     <southBoundLatitude>6.87306</southBoundLatitude>
+     <northBoundLatitude>9.29114</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:3116" maxx="1.51986e+06" minx="1.25181e+06" maxy="1.22446e+06" miny="1.04835e+06"/>
+    <BoundingBox CRS="EPSG:4326" maxx="9.29114" minx="6.87306" maxy="-72.0471" miny="-73.6374"/>
+    <BoundingBox CRS="EPSG:3857" maxx="-8.02024e+06" minx="-8.19728e+06" maxy="1.03885e+06" miny="766947"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Amenaza Sismica - Norte De Santander&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <MaxScaleDenominator>3.5e+06</MaxScaleDenominator>
+   </Layer>
+   <Layer queryable="1">
+    <Name>CentrosPoblados</Name>
+    <Title>CentrosPoblados</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3116</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-73.4706</westBoundLongitude>
+     <eastBoundLongitude>-72.2283</eastBoundLongitude>
+     <southBoundLatitude>7.01851</southBoundLatitude>
+     <northBoundLatitude>9.0013</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:3116" maxx="1.48768e+06" minx="1.26792e+06" maxy="1.20436e+06" miny="1.06673e+06"/>
+    <BoundingBox CRS="EPSG:4326" maxx="9.0013" minx="7.01851" maxy="-72.2283" miny="-73.4706"/>
+    <BoundingBox CRS="EPSG:3857" maxx="-8.04042e+06" minx="-8.17871e+06" maxy="1.00617e+06" miny="783258"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=CentrosPoblados&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+   </Layer>
+   <Layer queryable="1">
+    <Name>DrenajeDoble</Name>
+    <Title>DrenajeDoble</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3116</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-72.1386</westBoundLongitude>
+     <eastBoundLongitude>-72.0113</eastBoundLongitude>
+     <southBoundLatitude>7.00944</southBoundLatitude>
+     <northBoundLatitude>7.05009</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:3116" maxx="1.27187e+06" minx="1.26731e+06" maxy="1.22835e+06" miny="1.21425e+06"/>
+    <BoundingBox CRS="EPSG:4326" maxx="7.05009" minx="7.00944" maxy="-72.0113" miny="-72.1386"/>
+    <BoundingBox CRS="EPSG:3857" maxx="-8.01626e+06" minx="-8.03044e+06" maxy="786801" miny="782241"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=DrenajeDoble&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <MaxScaleDenominator>210000</MaxScaleDenominator>
+   </Layer>
+   <Layer queryable="1">
+    <Name>DrenajeSencillo</Name>
+    <Title>DrenajeSencillo</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3116</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-73.6336</westBoundLongitude>
+     <eastBoundLongitude>-72.0362</eastBoundLongitude>
+     <southBoundLatitude>6.87228</southBoundLatitude>
+     <northBoundLatitude>9.29113</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:3116" maxx="1.51986e+06" minx="1.25172e+06" maxy="1.22566e+06" miny="1.04877e+06"/>
+    <BoundingBox CRS="EPSG:4326" maxx="9.29113" minx="6.87228" maxy="-72.0362" miny="-73.6336"/>
+    <BoundingBox CRS="EPSG:3857" maxx="-8.01904e+06" minx="-8.19685e+06" maxy="1.03885e+06" miny="766860"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=DrenajeSencillo&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <MaxScaleDenominator>210000</MaxScaleDenominator>
+   </Layer>
+   <Layer queryable="1">
+    <Name>Vías</Name>
+    <Title>Vías</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3116</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-73.6044</westBoundLongitude>
+     <eastBoundLongitude>-72.1961</eastBoundLongitude>
+     <southBoundLatitude>7.00809</southBoundLatitude>
+     <northBoundLatitude>9.21978</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:3116" maxx="1.51187e+06" minx="1.26675e+06" maxy="1.20792e+06" miny="1.05199e+06"/>
+    <BoundingBox CRS="EPSG:4326" maxx="9.21978" minx="7.00809" maxy="-72.1961" miny="-73.6044"/>
+    <BoundingBox CRS="EPSG:3857" maxx="-8.03683e+06" minx="-8.19361e+06" maxy="1.0308e+06" miny="782089"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Vías&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <MinScaleDenominator>2000</MinScaleDenominator>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+   </Layer>
+   <Layer queryable="1">
+    <Name>Veredas</Name>
+    <Title>Veredas</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3116</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-73.6341</westBoundLongitude>
+     <eastBoundLongitude>-72.0294</eastBoundLongitude>
+     <southBoundLatitude>6.87227</southBoundLatitude>
+     <northBoundLatitude>9.29121</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:3116" maxx="1.51988e+06" minx="1.25172e+06" maxy="1.22641e+06" miny="1.04872e+06"/>
+    <BoundingBox CRS="EPSG:4326" maxx="9.29121" minx="6.87227" maxy="-72.0294" miny="-73.6341"/>
+    <BoundingBox CRS="EPSG:3857" maxx="-8.01828e+06" minx="-8.19691e+06" maxy="1.03886e+06" miny="766859"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Veredas&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+   </Layer>
+   <Layer queryable="1">
+    <Name>Colombia</Name>
+    <Title>Colombia</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3116</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-81.7201</westBoundLongitude>
+     <eastBoundLongitude>-66.8755</eastBoundLongitude>
+     <southBoundLatitude>-4.21782</southBoundLatitude>
+     <northBoundLatitude>12.5903</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:3116" maxx="1.89631e+06" minx="21183.1" maxy="1.80385e+06" miny="146676"/>
+    <BoundingBox CRS="EPSG:4326" maxx="12.5903" minx="-4.21782" maxy="-66.8755" miny="-81.7201"/>
+    <BoundingBox CRS="EPSG:3857" maxx="-7.44455e+06" minx="-9.09705e+06" maxy="1.41296e+06" miny="-469950"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Colombia&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+   </Layer>
+   <Layer queryable="1">
+    <Name>Municipios</Name>
+    <Title>Municipios</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3116</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-73.6341</westBoundLongitude>
+     <eastBoundLongitude>-72.0113</eastBoundLongitude>
+     <southBoundLatitude>6.87227</southBoundLatitude>
+     <northBoundLatitude>9.29121</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:3116" maxx="1.51989e+06" minx="1.25172e+06" maxy="1.22842e+06" miny="1.04872e+06"/>
+    <BoundingBox CRS="EPSG:4326" maxx="9.29121" minx="6.87227" maxy="-72.0113" miny="-73.6341"/>
+    <BoundingBox CRS="EPSG:3857" maxx="-8.01626e+06" minx="-8.19691e+06" maxy="1.03886e+06" miny="766859"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Municipios&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <MinScaleDenominator>210000</MinScaleDenominator>
+    <MaxScaleDenominator>2.1e+06</MaxScaleDenominator>
+   </Layer>
+   <Layer queryable="1">
+    <Name>Norte De Santander</Name>
+    <Title>Norte De Santander</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3116</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-73.6341</westBoundLongitude>
+     <eastBoundLongitude>-72.0113</eastBoundLongitude>
+     <southBoundLatitude>6.87227</southBoundLatitude>
+     <northBoundLatitude>9.29121</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:3116" maxx="1.51989e+06" minx="1.25172e+06" maxy="1.22842e+06" miny="1.04872e+06"/>
+    <BoundingBox CRS="EPSG:4326" maxx="9.29121" minx="6.87227" maxy="-72.0113" miny="-73.6341"/>
+    <BoundingBox CRS="EPSG:3857" maxx="-8.01626e+06" minx="-8.19691e+06" maxy="1.03886e+06" miny="766859"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Norte De Santander&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+   </Layer>
+   <Layer queryable="1">
+    <Name>Curvas100</Name>
+    <Title>Curvas100</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3116</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-73.5769</westBoundLongitude>
+     <eastBoundLongitude>-72.0526</eastBoundLongitude>
+     <southBoundLatitude>6.87262</southBoundLatitude>
+     <northBoundLatitude>9.28304</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:3116" maxx="1.51896e+06" minx="1.25177e+06" maxy="1.22384e+06" miny="1.055e+06"/>
+    <BoundingBox CRS="EPSG:4326" maxx="9.28304" minx="6.87262" maxy="-72.0526" miny="-73.5769"/>
+    <BoundingBox CRS="EPSG:3857" maxx="-8.02086e+06" minx="-8.19054e+06" maxy="1.03793e+06" miny="766898"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Curvas100&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <MaxScaleDenominator>210000</MaxScaleDenominator>
+   </Layer>
+   <Layer queryable="1">
+    <Name>Departamentos</Name>
+    <Title>Departamentos</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3116</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>-81.7251</westBoundLongitude>
+     <eastBoundLongitude>-66.8755</eastBoundLongitude>
+     <southBoundLatitude>-4.21782</southBoundLatitude>
+     <northBoundLatitude>13.3907</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:3116" maxx="1.9856e+06" minx="21177.6" maxy="1.80385e+06" miny="146115"/>
+    <BoundingBox CRS="EPSG:4326" maxx="13.3907" minx="-4.21782" maxy="-66.8755" miny="-81.7251"/>
+    <BoundingBox CRS="EPSG:3857" maxx="-7.44455e+06" minx="-9.0976e+06" maxy="1.5044e+06" miny="-469950"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wms.qgiscloud.com/danielaneva/Taller2NS?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Departamentos&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <MaxScaleDenominator>3.5e+06</MaxScaleDenominator>
+   </Layer>
+  </Layer>
+ </Capability>
+</WMS_Capabilities>
