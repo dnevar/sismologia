@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Capabilities version="1.0.0" xmlns="http://www.opengis.net/wmts/1.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wmts/1.0 http://schemas.opengis.net/wmts/1.0/wmtsGetCapabilities_response.xsd">
+  <ServiceMetadataURL xlink:href="https://dnevar.github.io/sismologia/wmts/1.0.0/WMTSCapabilities.xml"/>
+  <ows:ServiceIdentification>
+    <ows:ServiceType>OGC WMTS</ows:ServiceType>
+    <ows:ServiceTypeVersion>1.0.0</ows:ServiceTypeVersion>
+    <ows:Title>Norte de Santander  fallas y sismologia</ows:Title>
+    <ows:Abstract xml:lang="en">Norte de Santander fallas y sismologia</ows:Abstract>
+    <ows:Keywords>
+      <ows:Keyword>fallas</ows:Keyword>
+      <ows:Keyword>sismologia</ows:Keyword>
+    </ows:Keywords>
+    <ows:Fees>Ninguna</ows:Fees>
+    <ows:AccessConstraints>No se permite la descarga masiva</ows:AccessConstraints>
+  </ows:ServiceIdentification>
+  <ows:ServiceProvider>
+    <ows:ProviderName>Daniela Neva</ows:ProviderName>
+    <ows:ProviderSite xlink:href="https://dnevar.github.io/sismologia/index.html"/>
+  </ows:ServiceProvider>
+  <Contents>
+    <Layer>
+      <ows:Identifier>topografico</ows:Identifier>
+      <ows:Title>Mapa base de Norte de Santander</ows:Title>
+      <ows:Abstract>Mapa base de Norte de Santander</ows:Abstract>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.18.3:3857">
+        <ows:LowerCorner>-8224698.86755 1051082.27437</ows:LowerCorner>
+        <ows:UpperCorner>-7989578.52202 752672.225489</ows:UpperCorner>
+      </ows:BoundingBox>
+      <ows:WGS84BoundingBox crs="urn:ogc:def:crs:OGC:2:84">
+        <ows:LowerCorner>-73.883727 9.399584</ows:LowerCorner>
+        <ows:UpperCorner>-71.771605 6.745731</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <Style isDefault="true">
+        <ows:Identifier>default</ows:Identifier>
+      </Style>
+      <Format>image/png</Format>
+      <TileMatrixSetLink>
+        <TileMatrixSet>z299to312</TileMatrixSet>
+      </TileMatrixSetLink>
+      <ResourceURL format="image/png" resourceType="tile" template="https://dnevar.github.io/sismologia/Mapnik/10/{TileMatrix}/{TileCol}/{TileRow}.png"/>
+    </Layer>
+    <TileMatrixSet>
+      <ows:Identifier>z299to312</ows:Identifier>
+      <ows:SupportedCRS>urn:ogc:def:crs:EPSG:6.18.3:3857</ows:SupportedCRS>
+      <TileMatrix>
+        <ows:Identifier>299</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>1018517988167243043134222844204689080525734196832968125318070224677190649881668353091698688</MatrixWidth>
+        <MatrixHeight>1018517988167243043134222844204689080525734196832968125318070224677190649881668353091698688</MatrixHeight>
+      </TileMatrix>
+      <TileMatrix>
+        <ows:Identifier>300</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376</MatrixWidth>
+        <MatrixHeight>2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376</MatrixHeight>
+      </TileMatrix>
+      <TileMatrix>
+        <ows:Identifier>301</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>4074071952668972172536891376818756322102936787331872501272280898708762599526673412366794752</MatrixWidth>
+        <MatrixHeight>4074071952668972172536891376818756322102936787331872501272280898708762599526673412366794752</MatrixHeight>
+      </TileMatrix>
+      <TileMatrix>
+        <ows:Identifier>302</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>8148143905337944345073782753637512644205873574663745002544561797417525199053346824733589504</MatrixWidth>
+        <MatrixHeight>8148143905337944345073782753637512644205873574663745002544561797417525199053346824733589504</MatrixHeight>
+      </TileMatrix>
+      <TileMatrix>
+        <ows:Identifier>303</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>16296287810675888690147565507275025288411747149327490005089123594835050398106693649467179008</MatrixWidth>
+        <MatrixHeight>16296287810675888690147565507275025288411747149327490005089123594835050398106693649467179008</MatrixHeight>
+      </TileMatrix>
+      <TileMatrix>
+        <ows:Identifier>304</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>32592575621351777380295131014550050576823494298654980010178247189670100796213387298934358016</MatrixWidth>
+        <MatrixHeight>32592575621351777380295131014550050576823494298654980010178247189670100796213387298934358016</MatrixHeight>
+      </TileMatrix>
+      <TileMatrix>
+        <ows:Identifier>305</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>65185151242703554760590262029100101153646988597309960020356494379340201592426774597868716032</MatrixWidth>
+        <MatrixHeight>65185151242703554760590262029100101153646988597309960020356494379340201592426774597868716032</MatrixHeight>
+      </TileMatrix>
+      <TileMatrix>
+        <ows:Identifier>306</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>130370302485407109521180524058200202307293977194619920040712988758680403184853549195737432064</MatrixWidth>
+        <MatrixHeight>130370302485407109521180524058200202307293977194619920040712988758680403184853549195737432064</MatrixHeight>
+      </TileMatrix>
+      <TileMatrix>
+        <ows:Identifier>307</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>260740604970814219042361048116400404614587954389239840081425977517360806369707098391474864128</MatrixWidth>
+        <MatrixHeight>260740604970814219042361048116400404614587954389239840081425977517360806369707098391474864128</MatrixHeight>
+      </TileMatrix>
+      <TileMatrix>
+        <ows:Identifier>308</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>521481209941628438084722096232800809229175908778479680162851955034721612739414196782949728256</MatrixWidth>
+        <MatrixHeight>521481209941628438084722096232800809229175908778479680162851955034721612739414196782949728256</MatrixHeight>
+      </TileMatrix>
+      <TileMatrix>
+        <ows:Identifier>309</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>1042962419883256876169444192465601618458351817556959360325703910069443225478828393565899456512</MatrixWidth>
+        <MatrixHeight>1042962419883256876169444192465601618458351817556959360325703910069443225478828393565899456512</MatrixHeight>
+      </TileMatrix>
+      <TileMatrix>
+        <ows:Identifier>310</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>2085924839766513752338888384931203236916703635113918720651407820138886450957656787131798913024</MatrixWidth>
+        <MatrixHeight>2085924839766513752338888384931203236916703635113918720651407820138886450957656787131798913024</MatrixHeight>
+      </TileMatrix>
+      <TileMatrix>
+        <ows:Identifier>311</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>4171849679533027504677776769862406473833407270227837441302815640277772901915313574263597826048</MatrixWidth>
+        <MatrixHeight>4171849679533027504677776769862406473833407270227837441302815640277772901915313574263597826048</MatrixHeight>
+      </TileMatrix>
+      <TileMatrix>
+        <ows:Identifier>312</ows:Identifier>
+        <ScaleDenominator>0.000000000000</ScaleDenominator>
+        <TopLeftCorner>-20037508.34278924 20037508.34278924</TopLeftCorner>
+        <TileWidth>256</TileWidth>
+        <TileHeight>256</TileHeight>
+        <MatrixWidth>8343699359066055009355553539724812947666814540455674882605631280555545803830627148527195652096</MatrixWidth>
+        <MatrixHeight>8343699359066055009355553539724812947666814540455674882605631280555545803830627148527195652096</MatrixHeight>
+      </TileMatrix>
+    </TileMatrixSet>
+  </Contents>
+</Capabilities>
+
