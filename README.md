@@ -1,9 +1,12 @@
 # sismologia
 
 #1. Servicio WMS en QGIS Cloud https://qgiscloud.com/danielaneva/Taller2NS/wms?SERVICE=WMS&REQUEST=GetCapabilities
+
 #2. Servicio WFS en QGIS Cloud https://qgiscloud.com/danielaneva/Taller2NS/wms?SERVICE=WFS&REQUEST=GetCapabilities 
+
 #3. Servicio WCS en QGIS Cloud https://qgiscloud.com/danielaneva/Taller2NS/wms?SERVICE=WCS&REQUEST=GetCapabilities
-#4. Servicio WMTS en GitHub, así como el Esquema de Caché XYZ https://dnevar.github.io/sismologia/index.html
+
+#4. Servicio WMTS en GitHub https://dnevar.github.io/sismologia/index.html
 
 
 #5. Metadatos con QGIS. Realizar  el cargue de metadatos  (XML)
