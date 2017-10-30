@@ -29,6 +29,7 @@ Visores de mapas
 GoogleSites https://sites.google.com/unal.edu.co/ogcsinternacionalcourse/p%C3%A1gina-principal/taller-1-qgis-desktop?authuser=1
 Debes tener una cuenta @unal.edu.co para poder acceder al sitio
 
+Pagina principal del sitio https://sites.google.com/unal.edu.co/ogcsinternacionalcourse/p%C3%A1gina-principal?authuser=1
 
 
 
